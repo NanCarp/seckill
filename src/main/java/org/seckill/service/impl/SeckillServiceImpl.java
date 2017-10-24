@@ -45,6 +45,7 @@ public class SeckillServiceImpl implements SeckillService {
     }
 
     public Exposer exportSeckillUrl(long seckillId) {
+
         Seckill seckill = seckillDao.queryById(seckillId);
 
         if (seckill == null) {
